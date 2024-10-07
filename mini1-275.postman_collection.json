@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "5f155ffa-7a09-4ea5-ba73-fab22c587c88",
+		"name": "mini1-275",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6305217"
+	},
+	"item": [
+		{
+			"name": "Python Data1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/pythonData1?algorithm=parallel&search_header=Country Name&search_term=Cuba",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pythonData1"
+					],
+					"query": [
+						{
+							"key": "algorithm",
+							"value": "parallel"
+						},
+						{
+							"key": "search_header",
+							"value": "Country Name"
+						},
+						{
+							"key": "search_term",
+							"value": "Cuba"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Python Data2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/pythonData2?algorithm=serial&search_header=location1&search_term=Jacobs",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pythonData2"
+					],
+					"query": [
+						{
+							"key": "algorithm",
+							"value": "serial"
+						},
+						{
+							"key": "search_header",
+							"value": "location1"
+						},
+						{
+							"key": "search_term",
+							"value": "Jacobs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CPP Data1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/cppData1?algorithm=parallel&search_header=Country Name&search_term=Cuba",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cppData1"
+					],
+					"query": [
+						{
+							"key": "algorithm",
+							"value": "parallel"
+						},
+						{
+							"key": "search_header",
+							"value": "Country Name"
+						},
+						{
+							"key": "search_term",
+							"value": "Cuba"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Python Data3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"algorithm\": \"serial\",\r\n    \"search_header\": \"location1\",\r\n    \"search_term\": \"Jacobs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/pythonData3?algorithm=parallel&search_header=Plate ID&search_term=KGL8099",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pythonData3"
+					],
+					"query": [
+						{
+							"key": "algorithm",
+							"value": "parallel"
+						},
+						{
+							"key": "search_header",
+							"value": "Plate ID"
+						},
+						{
+							"key": "search_term",
+							"value": "KGL8099"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CPP Data2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:5000/cppData2?algorithm=serial&search_header=location1&search_term=Jacobs",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cppData2"
+					],
+					"query": [
+						{
+							"key": "algorithm",
+							"value": "serial"
+						},
+						{
+							"key": "search_header",
+							"value": "location1"
+						},
+						{
+							"key": "search_term",
+							"value": "Jacobs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CPP Data3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:5000/cppData3?algorithm=parallel&search_header=Plate ID&search_term=KVT1039",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cppData3"
+					],
+					"query": [
+						{
+							"key": "algorithm",
+							"value": "parallel"
+						},
+						{
+							"key": "search_header",
+							"value": "Plate ID"
+						},
+						{
+							"key": "search_term",
+							"value": "KVT1039"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
